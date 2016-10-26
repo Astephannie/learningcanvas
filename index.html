@@ -8,11 +8,18 @@
 	<body>
 		<canvas id="firstCanvas"></canvas>
 		<script type="text/javascript">
+			/* 
 			var c = document.getElementById("firstCanvas");
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
 			ctx.moveTo(0, 0);
 			ctx.lineTo(300, 150);
+			ctx.stroke();
+			*/
+			var c = document.getElementById("firstCanvas");
+			var ctx = c.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(150,75,75,0,2*Math.PI);
 			ctx.stroke();
 		</script>
 	</body>
